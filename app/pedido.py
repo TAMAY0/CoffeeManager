@@ -1,4 +1,3 @@
-#
 from app.producto import Producto
 
 class Pedido:

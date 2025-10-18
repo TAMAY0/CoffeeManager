@@ -6,3 +6,7 @@ def test_agregar_producto_y_total():
     pedido.agregar_producto(Producto("Café", 10))
     pedido.agregar_producto(Producto("Jugo", 8))
     assert pedido.calcular_total() == 18
+
+def test_pedido_vacio():
+    pedido = Pedido("Ana")
+    assert pedido.calcular_total() == 0

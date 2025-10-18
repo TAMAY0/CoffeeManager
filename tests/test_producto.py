@@ -9,3 +9,7 @@ def test_crear_producto_valido():
 def test_precio_invalido():
     with pytest.raises(ValueError):
         Producto("Café", -2)
+
+def test_nombre_vacio():
+    with pytest.raises(ValueError):
+        Producto("", 10)
